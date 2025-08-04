@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mounty Health Center | Bali Belly Rescue IV Therapy Bali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      /* Custom CSS for animations and effects */
+      @keyframes float {
+        0% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.7; }
+        50% { transform: translateY(-20px) translateX(15px) scale(1.1); opacity: 1; }
+        100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.7; }
+      }
+      .particle {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 20px rgba(90, 159, 173, 0.4); }
+        50% { box-shadow: 0 0 35px rgba(90, 159, 173, 0.8); }
+      }
+      .animate-pulse-glow {
+        animation: pulse-glow 3s infinite ease-in-out;
+      }
+
+      /* Infinite Testimonial Slider */
+      @keyframes scroll-x {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+      }
+      .animate-scroll-x {
+        animation: scroll-x 60s linear infinite;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#5A9FAD',
+              'primary-dark': '#4A8B9A',
+              'primary-light': '#6BB3C2',
+              'secondary-light': '#B8E0E8',
+              'secondary-powder': '#D4F1F7',
+              'accent-green': '#52C4A0',
+              'premium-gold': '#D4AF37',
+              'luxury-platinum': '#E5E4E2',
+              'deep-charcoal': '#2D3436',
+              'soft-white': '#FEFEFE',
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1235609608313692');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-soft-white font-sans text-deep-charcoal antialiased">
+    <!-- Meta Pixel Code (noscript) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1235609608313692&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
